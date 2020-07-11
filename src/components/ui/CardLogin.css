@@ -1,0 +1,49 @@
+.card
+{
+    background-color: white;
+    padding: 20% 20%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.login-h1
+{
+    font-size: 60px;
+}
+
+input
+{
+    margin-top: 10%;
+    padding: 10% 10%;
+    border: 1px solid rgba(55, 203, 106); 
+    text-align: left;
+    
+}
+.input-user
+{
+    margin-top: 10%;
+}
+
+.submit
+{
+    padding: 20px 20px;
+    background-color: rgba(55, 203, 106);
+    color: white;
+    font-weight: bold;
+    margin-top: 10%;
+    border: 0px;
+    width: 68%;
+    -webkit-box-shadow: 10px 9px 25px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 10px 9px 25px 0px rgba(0,0,0,0.3);
+     box-shadow: 10px 9px 25px 0px rgba(0,0,0,0.3)
+}
+
+
+
+
+
