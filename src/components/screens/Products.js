@@ -2,14 +2,17 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 import checkToken from "../../checkToken";
-import Search from '../ui/Search'
+import Search from "../ui/Search";
+import "./Products.css";
+import ProductsGrid from "../ui/ProductsGrid";
 
 const Products = () => {
   const token = localStorage.getItem("token");
 
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const[query, setQuery] = useState('')
+  const [query, setQuery] = useState("");
+ 
 
   const options = {
     url: "http://localhost:3002/products/getProductsByFilters",
@@ -31,28 +34,20 @@ const Products = () => {
 
   const fetchProducts = async () => {
     const res = await axios(options);
-    console.log(res.data.data)
-    setProducts(res.data.data)
-    console.log(products)
-    
+    console.log(res.data.data);
+    setProducts(res.data.data);
+    console.log(products);
+    setLoading(false);
   };
 
   useEffect(() => {
-        
-      fetchProducts();
-    
+    fetchProducts();
   }, [query]);
 
-
   return (
-    <div>
-
-      <Search getQuery={(q) => setQuery(q)}/>
-
-      {products.map(product => (
-          <h3>{product.title}</h3>
-      ))}  
-      
+    <div className="container-products">
+      <Search getQuery={(q) => setQuery(q)} />
+      <ProductsGrid loading={loading} products={products} />
     </div>
   );
 };
