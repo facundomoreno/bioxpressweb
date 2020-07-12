@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react'
 import CardLogIn from '../ui/CardLogIn'
 import './LogIn.css'
 import axios from 'axios'
-import history from "../../history";
-import {withRouter, useHistory} from 'react-router-dom'
+
+import {useHistory} from 'react-router-dom'
 
 const LogIn = () => {    
     let history = useHistory();
@@ -11,6 +11,7 @@ const LogIn = () => {
     
 
     const [values, setValues] = useState({});
+    const[success, setSuccess] = useState(false);
 
     const options = {
         url: 'http://localhost:3002/users/login',
@@ -23,23 +24,30 @@ const LogIn = () => {
          "username": values.user,
          "password": values.password
      }
-    }
-
+    }   
    
 
     useEffect(() => {
+      
+      if(localStorage.getItem('token') != null)
+      {
+          history.push('home');
+      }  
 
-        axios(options)
+      if(success === false){
+         axios(options)
         .then(response => {
             if(response.status === 200)
             {
-                
-                console.log(response);
+                setSuccess(true);
+               
                 let buff = new Buffer(response.data.token.split(".")[1], "base64");
                 let data = buff.toString("ascii");
                 //console.log(JSON.parse(data).result.username);
                 
-                localStorage.setItem('token',data);   
+                localStorage.setItem('tokenInfo', data);
+                localStorage.setItem('token', response.data.token);
+                
                 
                      
                 history.push({
@@ -48,7 +56,8 @@ const LogIn = () => {
 
             }            
         })
-        console.log(values);
+    }
+        
     }, [values])
 
     return (
@@ -58,4 +67,4 @@ const LogIn = () => {
     )
 }
 
-export default withRouter(LogIn);
+export default LogIn;
