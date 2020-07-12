@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory} from "react-router-dom";
 import checkToken from "../../checkToken";
+import CardsHome from "../ui/CardsHome"
+import './Home.css'
 
 const Home = () => {
   let history = useHistory();
@@ -44,8 +46,10 @@ const Home = () => {
 
   return (
     <div>
-      <button onClick={() => logOut()}>LogOut</button>
-      <h1>{`¡Bienvenido ${userData.first_name}!`}</h1>
+      <button className="button-home" onClick={() => logOut()}>LogOut</button>
+      <h1 className="h1-home">{`¡Bienvenido ${userData.first_name}!`}</h1>
+      <CardsHome />
+      
     </div>
   );
 };
