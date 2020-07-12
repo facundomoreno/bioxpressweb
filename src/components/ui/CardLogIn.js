@@ -22,8 +22,8 @@ export const CardLogIn = ({getValues}) => {
     return (
         <div className="card">
             <h1 className="login-h1">Log In</h1>
-            <input onChange = {(e) => onchangeUser(e)} className="input-user" type="text" placeholder="Usuario"></input>
-            <input onChange={(e) => onchangePass(e)} type="password" placeholder="Contraseña"></input>
+            <input onChange = {(e) => onchangeUser(e)} className="input-login" type="text" placeholder="Usuario"></input>
+            <input onChange={(e) => onchangePass(e)} className="input-login" type="password" placeholder="Contraseña"></input>
             <button onClick={() => onClick()} className="submit">Continue</button>
             
         </div>
