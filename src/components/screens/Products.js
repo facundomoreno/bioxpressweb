@@ -46,7 +46,8 @@ const Products = () => {
 
   return (
     <div className="container-products">
-      <Search getQuery={(q) => setQuery(q)} />
+      <h1 className="cantidad-busqueda">{products.length +" resultados coincidentes"}</h1>
+      <Search getQuery={(q) => setQuery(q)} />     
       <ProductsGrid loading={loading} products={products} />
     </div>
   );

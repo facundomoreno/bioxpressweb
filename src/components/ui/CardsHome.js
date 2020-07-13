@@ -17,9 +17,15 @@ const CardsHome = () => {
         </div>
         </Link>
 
-        <Link to='historial-entregas' className="link-home">
+        <Link to='/historial-entregas' className="link-home">
         <div className='card-home'>
             <h3 className="h3-home">Historial de Entregas</h3>            
+        </div>
+        </Link>
+
+        <Link to='/categorias' className="link-home">
+        <div className='card-home'>
+            <h3 className="h3-home">Categorías</h3>            
         </div>
         </Link>
      </div>

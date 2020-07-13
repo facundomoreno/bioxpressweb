@@ -1,8 +1,11 @@
+
+
 .cards-container
 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 40px;
 
 }
 
@@ -13,8 +16,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .h3-home
 {
@@ -29,3 +32,9 @@
 {
     text-decoration: none;
 }
+
+@media (max-width: 600px) {
+    .cards-container{
+        grid-template-columns: repeat(1, 0fr);
+    }
+  }

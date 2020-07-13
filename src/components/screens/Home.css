@@ -1,11 +1,32 @@
+
+.home-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-hello-logout
+{
+    display: flex;  
+    align-items: flex-start;
+    justify-content: start; 
+    margin-top: 5%;
+
+}
+
 .h1-home
 {
     color: white;
+    justify-self: start;
+    align-self: start;
+    justify-content: center;
+    text-align: center;
+    margin-left: 20%;
+    
 }
 .button-home
 {
-    transform: translate(50vh);
-    margin-top: 10px;
+     
     padding: 10px 10px;
     color: white;
     border: 0px;
