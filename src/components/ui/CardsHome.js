@@ -11,9 +11,9 @@ const CardsHome = () => {
         </div>
         </Link>
 
-        <Link to='/userstores' className="link-home">
+        <Link to='/stores' className="link-home">
         <div className='card-home'>
-            <h3 className="h3-home">Usuarios Y Negocios</h3>            
+            <h3 className="h3-home">Stores</h3>            
         </div>
         </Link>
 

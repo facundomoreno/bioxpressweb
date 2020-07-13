@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Search.css";
 
-const Search = ({getQuery}) => {
+const Search = ({getQuery, screen}) => {
   const [text, setText] = useState('');
 
   const onChange = (q) => {
@@ -12,7 +12,7 @@ const Search = ({getQuery}) => {
     <input
       className="input-search"
       type="text"      
-      placeholder="Buscar producto"
+      placeholder={"Buscar " + screen }
       value={text}
       onChange={(e) => onChange(e.target.value)}
       autoFocus

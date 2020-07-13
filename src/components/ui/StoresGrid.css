@@ -1,5 +1,5 @@
-.cards-product-item
-{
+.cards-store-item
+{ 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -8,19 +8,15 @@
     margin-left: 10%;
     margin-right: 10%;
 }
-.loading
-{
-    color: white;
-    margin-top: 10%;
-}
+
 
 @media (max-width: 800px) {
-    .cards-product-item {
+    .cards-store-item {
         grid-template-columns: repeat(2, 0fr);
     }
   }
   @media (max-width: 600px) {
-    .cards-product-item {
+    .cards-store-item {
         grid-template-columns: repeat(1, 0fr);
     }
   }  

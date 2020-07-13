@@ -1,0 +1,16 @@
+.container-stores
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cantidad-busqueda-stores
+{
+    color: white;
+    font-weight: bold;
+    font-style: inherit;
+    margin-top: 40px;
+
+
+}

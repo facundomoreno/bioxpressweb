@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
-import checkToken from "../../checkToken";
 import Search from "../ui/Search";
 import "./Products.css";
 import ProductsGrid from "../ui/ProductsGrid";
@@ -47,7 +45,7 @@ const Products = () => {
   return (
     <div className="container-products">
       <h1 className="cantidad-busqueda">{products.length +" resultados coincidentes"}</h1>
-      <Search getQuery={(q) => setQuery(q)} />     
+      <Search getQuery={(q) => setQuery(q)} screen={"producto"} />     
       <ProductsGrid loading={loading} products={products} />
     </div>
   );

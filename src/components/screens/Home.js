@@ -15,14 +15,17 @@ const Home = () => {
     console.log("desloguedo");
     history.replace("/");
   };
+  
 
   useEffect(() => {
+    
     try {
       var token = localStorage.getItem("token");
       var data = JSON.parse(localStorage.getItem("tokenInfo")).result;
     } catch (e) {
-      console.log(e);
+      console.log(e);      
       logOut();
+      
     }
 
     if (checkToken(token) && data.ds_type === "administrador") {
