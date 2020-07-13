@@ -2,15 +2,22 @@
 .card-container-product
 {
   padding: 20px;
-  background-color: white;
- 
+  background-color: white; 
   min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  margin: 10px;
 }
 
 .li-item-product
 {
   list-style: none;
   margin: 10px;
+}
+.product-image
+{
+  height: 350px;
 }
 
 

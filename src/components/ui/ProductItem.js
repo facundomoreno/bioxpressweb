@@ -2,8 +2,10 @@ import React from "react";
 import "./ProductItem.css";
 
 const ProductItem = ({ product }) => {
+  
   return (
     <div className="card-container-product">      
+        <img src={product.path} className="product-image"></img>
        
           <h2 className="title-product-item">{product.title}</h2>
           <ul>

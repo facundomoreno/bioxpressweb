@@ -8,11 +8,13 @@ import Deliveries from "./components/screens/Deliveries"
 import Categories from "./components/screens/Categories"
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'  
 import history from './history'
+import Header from './components/ui/Header'
 
 function App() {
   return (
  
     <Router history={history}>      
+      <Header/>       
          <Switch>                     
               <Route path='/' exact component={LogIn}/>  
               <Route path='/home' component={Home}/>
