@@ -4,7 +4,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin-bottom: 0px;
-    margin-top: 20px;
+    margin-top: 20px;   
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -14,12 +14,14 @@
     margin-top: 10%;
 }
 
-@media (max-width: 800px) {
+
+
+@media (max-width: 1500px) {
     .cards-product-item {
         grid-template-columns: repeat(2, 0fr);
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     .cards-product-item {
         grid-template-columns: repeat(1, 0fr);
     }

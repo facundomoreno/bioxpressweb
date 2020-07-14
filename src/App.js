@@ -6,6 +6,7 @@ import Products from "./components/screens/Products"
 import Stores from "./components/screens/Stores"
 import Deliveries from "./components/screens/Deliveries"
 import Categories from "./components/screens/Categories"
+import ProductDetail from './components/screens/ProductDetail'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'  
 import history from './history'
 import Header from './components/ui/Header'
@@ -22,6 +23,7 @@ function App() {
               <Route path='/stores' component={Stores}/>
               <Route path='/historial-entregas' component={Deliveries}/>  
               <Route path='/categorias' component={Categories}/>    
+              <Route path='/products/:product' component={ProductDetail}></Route>
                        
               
          </Switch>     

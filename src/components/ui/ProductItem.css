@@ -4,6 +4,7 @@
   padding: 20px;
   background-color: white; 
   min-width: 300px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center; 
@@ -27,4 +28,11 @@
   margin: 10px;
 }
 
+.link-product
+{
+  color: black;
+  margin: 0px;
+  display: inherit;
+  text-decoration: none;
+}
 
