@@ -9,12 +9,15 @@
   flex-direction: column;
   justify-content: center; 
   margin: 10px;
+  border-radius: 5px;
 }
 
 .li-item-product
 {
   list-style: none;
-  margin: 10px;
+  margin: 0px;
+  font-size: 35px;
+  color: rgba(55, 203, 106);
 }
 .product-image
 {
