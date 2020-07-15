@@ -1,0 +1,17 @@
+.store-detail-product-card {
+  background-color: white;
+  border: 1px rgb(191, 196, 193) solid;
+  padding: 10px;
+  display: flex;
+  margin: 15px;
+ 
+}
+.store-detail-product-img {
+  width: 90px;
+  height: 80px;
+}
+
+.store-detail-product-titleandprice {
+  display: flex;
+  flex-direction: column;
+}

@@ -25,8 +25,7 @@ const Products = () => {
       minS: 1,
       maxS: 100000,
       minP: 1,
-      maxP: 100000,
-      id_category: 1,
+      maxP: 100000
     },
   };
 

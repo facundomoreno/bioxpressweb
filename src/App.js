@@ -7,6 +7,7 @@ import Stores from "./components/screens/Stores"
 import Deliveries from "./components/screens/Deliveries"
 import Categories from "./components/screens/Categories"
 import ProductDetail from './components/screens/ProductDetail'
+import StoreDetail from './components/screens/StoreDetail'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'  
 import history from './history'
 import Header from './components/ui/Header'
@@ -18,13 +19,14 @@ function App() {
       <Header/>       
          <Switch>                     
               <Route path='/' exact component={LogIn}/> 
-              <Route path='/home' component={Home}/>
-              <Route path='/productos' component={Products}/>
+              <Route path='/home' component={Home}/>              
               <Route path='/stores' component={Stores}/>
+              <Route path='/store/:store' component={StoreDetail}></Route>  
               <Route path='/historial-entregas' component={Deliveries}/>  
               <Route path='/categorias' component={Categories}/>    
-              <Route path='/products/:product' component={ProductDetail}></Route>
-                       
+              <Route path='/productos' component={Products}/>
+              <Route path='/product/:product' component={ProductDetail}></Route>
+                                   
               
          </Switch>     
     </Router>

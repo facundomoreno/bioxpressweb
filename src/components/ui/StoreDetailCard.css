@@ -1,0 +1,61 @@
+.card-store-detail
+{
+    background-color: white;
+    padding: 100px 200px;
+    display: flex;      
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+   
+}
+
+.store-detail-info-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+.store-detail-title
+{
+    
+}
+.store-detail-image
+{
+    width: 300px;
+    height: 250px;
+    margin-top: 5%;
+}
+.store-detail-rating
+{
+    margin-top: 5%;
+}
+.store-detail-products-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+
+}
+
+
+
+.store-detial-ul
+{
+    margin-top: 5%;
+    list-style: none;
+    max-width: 400px;
+}
+.store-detail-li
+{
+    margin-top: 3%;
+}
+.store-detail-ds
+{
+    font-style: italic;
+}
