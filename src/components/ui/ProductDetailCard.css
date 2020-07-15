@@ -7,6 +7,20 @@
     align-items: center;
     justify-content: center;
 }
+.product-detail-store-info
+{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    cursor: pointer;
+}
+.product-detail-store-info:hover
+{
+    background-color: rgb(215, 255, 231);
+}
+
 
 .image-product-detail-card
 {

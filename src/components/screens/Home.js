@@ -36,6 +36,7 @@ const Home = () => {
           username: data.username,
           ds_type: data.ds_type,
           first_name: data.first_name,
+          profile_pic: data.profile_pic
         });
         setLoading(false);
       }
@@ -49,8 +50,9 @@ const Home = () => {
       <div className="container-hello-logout">
         <button className="button-home" onClick={() => logOut()}>
           LogOut
-        </button>
+        </button>        
         <h1 className="h1-home">{`¡Bienvenido ${userData.first_name}!`}</h1>
+        <img alt="home-user-pic" src={userData.profile_pic} className="home-user-image"></img>
       </div>
       <CardsHome />
     </div>
