@@ -1,12 +1,11 @@
 .card-store-detail
 {
     background-color: white;
-    padding: 100px 200px;
+    padding: 10px 200px;
     display: flex;      
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
+    flex-direction: column;   
+    margin: 5px;
+    margin-bottom: 15px;
    
 }
 
@@ -18,6 +17,10 @@
     flex-direction: column;
     
 
+}
+.store-detail-adress
+{
+    color: #4876f1;
 }
 .store-detail-title
 {
@@ -31,14 +34,17 @@
 }
 .store-detail-rating
 {
+    margin-top: 2%;
+}
+.store-detail-productos-title-alert
+{
     margin-top: 5%;
 }
 .store-detail-products-container
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;   
     margin-top: 6%;
 
 }
@@ -58,4 +64,22 @@
 .store-detail-ds
 {
     font-style: italic;
+}
+.store-detail-owner-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 5%;
+}
+.store-detial-owner-name
+{
+    text-align: center;
+}
+.store-detail-user-pic
+{
+    width: 65px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 1%;
 }

@@ -1,0 +1,25 @@
+
+.categories-cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 5%;
+   
+}
+.categories-card
+{
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .categories-cards-container {
+        grid-template-columns: repeat(2, 0fr);
+    }
+  }
+  @media (max-width: 600px) {
+    .categories-cards-container {
+        grid-template-columns: repeat(1, 0fr);
+    }
+  }  

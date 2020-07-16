@@ -27,12 +27,12 @@ const ProductDetailCard = ({ product }) => {
             </strong>
           </li>
           <li className="li-product-detail">
-            <strong>Stock: </strong>
-            {product.stock}
+           Stock: <strong>{product.stock}</strong>
+            
           </li>
           <li className="li-product-detail">
-            <strong>Categoría: </strong>
-            {product.ds_category}
+            Categoría<strong> {product.ds_category}</strong>
+           
           </li>
         </ul>
       </div>

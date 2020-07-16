@@ -40,7 +40,7 @@
 }
 .h1-title-detail-product
 {
-    margin-top: 1%;
+    margin-top: 3%;
 }
 .description-product-detail
 {
@@ -50,8 +50,8 @@
 }
 .h1-price-detail-product
 {
-    margin-top: 2%;
-    color: rgba(55, 203, 106);;
+    margin-top: 3%;
+    color: rgba(55, 203, 106);
 }
 .text-info-container
 {
@@ -59,7 +59,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
+    max-width: 450px;
     
 }
 .store-and-pic-container
