@@ -1,7 +1,7 @@
 .card-store-detail
 {
     background-color: white;
-    padding: 10px 200px;
+    padding: 20px 200px;
     display: flex;      
     flex-direction: column;   
     margin: 5px;
@@ -30,15 +30,15 @@
 {
     width: 300px;
     height: 250px;
-    margin-top: 5%;
-}
-.store-detail-rating
-{
     margin-top: 2%;
+}
+.rating-component-store-detail
+{
+    margin-top: 1%;
 }
 .store-detail-productos-title-alert
 {
-    margin-top: 5%;
+    margin-top: 1%;
 }
 .store-detail-products-container
 {

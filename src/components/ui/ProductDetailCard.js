@@ -1,4 +1,5 @@
 import React from "react";
+import Rating from '@material-ui/lab/Rating'
 import "./ProductDetailCard.css";
 import {Link} from 'react-router-dom'
 const ProductDetailCard = ({ product }) => {
@@ -12,11 +13,13 @@ const ProductDetailCard = ({ product }) => {
           src={product.store_pic}
         ></img>
         <h2 className="h1-store-name-product-detail">{product.store_name}</h2>
+        
       </div>
       </Link>
       <img className="image-product-detail-card" src={product.path}></img>
       <div className="text-info-container">
         <h1 className="h1-title-detail-product">{product.title}</h1>
+        <Rating className="rating-component-store-detail" name="read-only" value={product.rating} precision={0.5} readOnly></Rating> (x ventas)
         <h2 className="h1-price-detail-product">
           {"Precio: $" + product.price}
         </h2>

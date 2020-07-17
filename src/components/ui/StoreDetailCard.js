@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from "react";
+import Rating from '@material-ui/lab/Rating';
 import "./StoreDetailCard.css";
 import "./StoreDetailProducts";
 import StoreDetailProducts from "./StoreDetailProducts";
 import userPh from '../../user.png'
+
 
 const StoreDetailCard = ({ store, products }) => {
   const [photo, SetUserPhoto] = useState('')
@@ -36,7 +38,7 @@ const StoreDetailCard = ({ store, products }) => {
           className="store-detail-image"
           src={store.store_pic}
         ></img>
-        <h2 className="store-detail-rating">{`Rating: ${store.rating}/5 `}</h2>
+        <Rating className="rating-component-store-detail" name="read-only"  value={store.rating} precision={0.5} readOnly></Rating> (x ventas)
         <div className="store-detail-ul-container">
           <ul className="store-detial-ul">
             <li className="store-detail-li">
